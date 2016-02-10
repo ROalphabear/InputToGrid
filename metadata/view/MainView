@@ -1,0 +1,555 @@
+{
+    "type": "Ext.container.Viewport",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|initialView": true,
+        "designer|userAlias": "mainview",
+        "designer|userClassName": "MainView",
+        "itemId": "mainView",
+        "layout": "border"
+    },
+    "designerId": "0ba41f05-69d3-4f65-a25f-892e02e1b78d",
+    "viewControllerInstanceId": "874378ee-64b4-4baf-a2d4-a81551e56fa3",
+    "viewModelInstanceId": "29d62ecc-ee99-4d29-a5e8-94261facd88a",
+    "cn": [
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "height": 100,
+                "itemId": "headerPanel",
+                "layout|region": "north",
+                "title": "Header"
+            },
+            "name": "MyPanel1",
+            "designerId": "6be7277a-e9a9-4c8d-9548-68f84e741644"
+        },
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "leftPanel",
+                "layout|flex": 1,
+                "layout|region": "west",
+                "layout|split": true,
+                "title": "",
+                "width": 150
+            },
+            "name": "MyPanel2",
+            "designerId": "9df01c6c-16e4-4a43-bae2-9d564f0d36a1",
+            "cn": [
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "FormularCursanti"
+                    },
+                    "name": "MyContainer",
+                    "designerId": "d96b5587-1295-4e9f-9495-b1c5d58056b6"
+                },
+                {
+                    "type": "Ext.form.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "bodyPadding": 10,
+                        "title": "Date cursant"
+                    },
+                    "name": "MyForm",
+                    "designerId": "a6a1997c-8757-4f1c-a791-fb76d3f864dc",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "allowBlank": false,
+                                "fieldLabel": "Nume",
+                                "layout|anchor": "100%",
+                                "maxLength": 40,
+                                "maxLengthText": "Text too long. The text must not exceed 40 characters.",
+                                "minLength": 3,
+                                "minLengthText": "Text too short. The text must have at least 3 characters.",
+                                "name": "numeCursant"
+                            },
+                            "name": "MyTextField",
+                            "designerId": "adbcebdb-fe24-49f6-9cb4-ac4d3cc47d4a"
+                        },
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "allowBlank": false,
+                                "fieldLabel": "Prenume",
+                                "layout|anchor": "100%",
+                                "maxLength": 40,
+                                "maxLengthText": "Text too long. The text must not exceed 40 characters.",
+                                "minLength": 3,
+                                "minLengthText": "Text too short. The text must have at least 3 characters.",
+                                "name": "prenumeCursant"
+                            },
+                            "name": "MyTextField2",
+                            "designerId": "32e36174-00f3-4d55-81b6-999293fec6ce"
+                        },
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "allowBlank": false,
+                                "fieldLabel": "Adresa",
+                                "layout|anchor": "100%",
+                                "maxLength": 50,
+                                "maxLengthText": "Text too long. The text must not exceed 50 characters.",
+                                "minLength": 10,
+                                "minLengthText": "Text too short. The text must have at least 10 characters.",
+                                "name": "adresaCursant"
+                            },
+                            "name": "MyTextField1",
+                            "designerId": "388cfd2c-d647-4244-b01e-da82cc5a16da"
+                        },
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "allowBlank": false,
+                                "fieldLabel": "CNP",
+                                "layout|anchor": "100%",
+                                "maxLength": 13,
+                                "name": "cnpCursant",
+                                "regex": "/[1-9]{13}/\n\n"
+                            },
+                            "name": "MyTextField3",
+                            "designerId": "fcfec1fb-e78e-4cd5-ae40-2581573e22e6"
+                        },
+                        {
+                            "type": "Ext.form.field.Date",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "allowBlank": false,
+                                "allowOnlyWhitespace": false,
+                                "fieldLabel": "Data nasterii",
+                                "format": null,
+                                "invalidText": "Invalid date",
+                                "layout|anchor": "100%",
+                                "name": "dataNasteriiCursant",
+                                "showToday": false
+                            },
+                            "name": "MyDateField",
+                            "designerId": "df039bd5-0821-45e4-9019-d34266c3b41b"
+                        },
+                        {
+                            "type": "Ext.form.CheckboxGroup",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "allowBlank": false,
+                                "blankText": "You must select at least a category",
+                                "defaults": [
+                                    "{",
+                                    "margin: '0 10 0 0'",
+                                    "}"
+                                ],
+                                "fieldLabel": "Categoria",
+                                "width": 150
+                            },
+                            "name": "MyCheckboxGroup",
+                            "designerId": "0c3d475b-9444-4f36-bb5c-3a9ae841127d",
+                            "cn": [
+                                {
+                                    "type": "Ext.form.field.Checkbox",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "boxLabel": "A",
+                                        "fieldLabel": null,
+                                        "margin": "0 10 0 0",
+                                        "name": "A",
+                                        "value": [
+                                            "'A'",
+                                            ""
+                                        ]
+                                    },
+                                    "name": "MyCheckbox",
+                                    "designerId": "067472bc-935a-41df-93dd-3982e8ad878e"
+                                },
+                                {
+                                    "type": "Ext.form.field.Checkbox",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "boxLabel": "B",
+                                        "fieldLabel": null,
+                                        "name": "B",
+                                        "value": [
+                                            "{",
+                                            "value: 'B'",
+                                            "}"
+                                        ]
+                                    },
+                                    "name": "MyCheckbox1",
+                                    "designerId": "7bbee95c-6a3d-40fb-b976-8650f096d317"
+                                },
+                                {
+                                    "type": "Ext.form.field.Checkbox",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "boxLabel": "C",
+                                        "fieldLabel": null,
+                                        "name": "C",
+                                        "value": [
+                                            "{",
+                                            "value: 'C'",
+                                            "}"
+                                        ]
+                                    },
+                                    "name": "MyCheckbox2",
+                                    "designerId": "66a3ba26-d78b-4436-bd41-2e6e56f424e1"
+                                },
+                                {
+                                    "type": "Ext.form.field.Checkbox",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "boxLabel": "CE",
+                                        "fieldLabel": null,
+                                        "name": "CE",
+                                        "value": [
+                                            "{",
+                                            "value: 'CE'",
+                                            "}"
+                                        ]
+                                    },
+                                    "name": "MyCheckbox3",
+                                    "designerId": "01e27be7-1ab2-44f6-9ff7-7e013dd7c10b"
+                                },
+                                {
+                                    "type": "Ext.form.field.Checkbox",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "boxLabel": "D",
+                                        "fieldLabel": null,
+                                        "name": "D",
+                                        "value": [
+                                            "{",
+                                            "value: 'D'",
+                                            "}"
+                                        ]
+                                    },
+                                    "name": "MyCheckbox4",
+                                    "designerId": "85b305b9-cdfd-4263-a4cc-c0ad9d195029"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.toolbar.Toolbar",
+                            "reference": {
+                                "name": "dockedItems",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dock": "bottom"
+                            },
+                            "name": "MyToolbar",
+                            "designerId": "a39f4c6c-23db-4f0d-af67-1e09ded60fb7",
+                            "cn": [
+                                {
+                                    "type": "Ext.button.Button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": null,
+                                        "text": "Submit"
+                                    },
+                                    "name": "MyButton",
+                                    "designerId": "ad4329c3-ba8b-47f3-aaab-aa0a68fbae2f",
+                                    "cn": [
+                                        {
+                                            "type": "viewcontrollereventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onButtonClick",
+                                                "implHandler": [
+                                                    "var form = this.getView().down('form');",
+                                                    "var store = this.getViewModel().getStore('Cursanti');",
+                                                    "",
+                                                    "if(form.isValid()){",
+                                                    "    var data = form.getValues();",
+                                                    "    store.loadData([data], true);",
+                                                    "}"
+                                                ],
+                                                "name": "click",
+                                                "scope": "me"
+                                            },
+                                            "name": "onButtonClick",
+                                            "designerId": "6da22e30-3218-4ee2-a139-bd8315eb85d4"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "itemId": "rightPanel",
+                "layout|flex": 1,
+                "layout|region": "center",
+                "layout|split": true,
+                "title": ""
+            },
+            "name": "MyPanel3",
+            "designerId": "5a0d4079-d7a4-487f-8bf8-939eececc032",
+            "cn": [
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": "TabelCursanti"
+                    },
+                    "name": "MyContainer1",
+                    "designerId": "3f20d817-7745-4df4-b6e3-ff4eb7e437e6"
+                },
+                {
+                    "type": "Ext.grid.Panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "store": [
+                            "{Cursanti}"
+                        ],
+                        "title": "Cursanti"
+                    },
+                    "name": "MyGridPanel",
+                    "configAlternates": {
+                        "store": "binding"
+                    },
+                    "designerId": "8a0da79f-5071-4e10-b89b-994f126407be",
+                    "cn": [
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "numeCursant",
+                                "flex": 1,
+                                "text": "Nume"
+                            },
+                            "name": "MyColumn",
+                            "designerId": "7c265696-71db-4d1d-9a1c-68e9f562c3cd"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "prenumeCursant",
+                                "flex": 1,
+                                "text": "Prenume"
+                            },
+                            "name": "MyColumn2",
+                            "designerId": "40018379-28c6-4a24-8c3e-d3c2027ccedb"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "adresaCursant",
+                                "flex": 1,
+                                "text": "Adresa"
+                            },
+                            "name": "MyColumn1",
+                            "designerId": "630560da-a52b-4cee-bb6a-f1b1e7ea4b14"
+                        },
+                        {
+                            "type": "Ext.grid.column.Number",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "cnpCursant",
+                                "flex": 1,
+                                "format": "0",
+                                "text": "CNP"
+                            },
+                            "name": "MyNumberColumn",
+                            "designerId": "10a111ff-3844-4d1d-a012-82c48b9f4088"
+                        },
+                        {
+                            "type": "Ext.grid.column.Date",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "dataNasteriiCursant",
+                                "flex": 1,
+                                "format": "d/m/Y",
+                                "text": "Data nasterii"
+                            },
+                            "name": "MyDateColumn",
+                            "designerId": "624aa531-29b3-4608-8707-fc01f6dd96db"
+                        },
+                        {
+                            "type": "Ext.grid.column.Column",
+                            "reference": {
+                                "name": "columns",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "dataIndex": "categorieCurs",
+                                "flex": 1,
+                                "text": "Categoria"
+                            },
+                            "name": "MyColumn3",
+                            "designerId": "7b0baf35-9982-4ae2-9afe-722401552824",
+                            "cn": [
+                                {
+                                    "type": "fixedfunction",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|params": [
+                                            "value",
+                                            "metaData",
+                                            "record",
+                                            "rowIndex",
+                                            "colIndex",
+                                            "store",
+                                            "view"
+                                        ],
+                                        "fn": "renderer",
+                                        "implHandler": [
+                                            "var cat = [",
+                                            "    'A', 'B', 'C', 'CE', 'D'",
+                                            "];",
+                                            "",
+                                            "var courseCategories = [];",
+                                            "for(var i = 0; i<cat.length; i++)",
+                                            "            {",
+                                            "        if(record.get(cat[i]) == 'on')",
+                                            "        {",
+                                            "            courseCategories.push(cat[i]);",
+                                            "        }",
+                                            "       }",
+                                            "return courseCategories.join(', ');"
+                                        ]
+                                    },
+                                    "name": "renderer",
+                                    "designerId": "6cb6a0ab-a422-41ee-895a-25cdce6f0120"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.grid.View",
+                            "reference": {
+                                "name": "viewConfig",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "MyGridView",
+                            "designerId": "0546f66a-9abd-4847-814a-c1cdcbbcee1e"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

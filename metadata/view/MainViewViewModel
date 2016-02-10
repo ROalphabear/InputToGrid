@@ -1,0 +1,109 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "mainview",
+        "designer|userClassName": "MainViewViewModel"
+    },
+    "designerId": "29d62ecc-ee99-4d29-a5e8-94261facd88a",
+    "cn": [
+        {
+            "type": "Ext.data.Store",
+            "reference": {
+                "name": "stores",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "Cursanti"
+            },
+            "name": "MyStore",
+            "designerId": "19225a18-bb89-4797-8b5d-05b3f37f69a3",
+            "cn": [
+                {
+                    "type": "Ext.data.field.Field",
+                    "reference": {
+                        "name": "fields",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "name": "numeCursant"
+                    },
+                    "name": "MyField",
+                    "designerId": "37511b0e-db11-412f-9fde-22f2b033c448"
+                },
+                {
+                    "type": "Ext.data.field.Field",
+                    "reference": {
+                        "name": "fields",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "name": "prenumeCursant"
+                    },
+                    "name": "MyField1",
+                    "designerId": "3da58790-a4c6-4a9a-b3d3-317753ea0567"
+                },
+                {
+                    "type": "Ext.data.field.Field",
+                    "reference": {
+                        "name": "fields",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "name": "adresaCursant"
+                    },
+                    "name": "MyField2",
+                    "designerId": "489a9527-a80f-48c5-a978-22463a1ad470"
+                },
+                {
+                    "type": "Ext.data.field.Field",
+                    "reference": {
+                        "name": "fields",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "name": "cnpCursant"
+                    },
+                    "name": "MyField3",
+                    "designerId": "4415932e-12a1-4707-bed7-15ff12d5289c"
+                },
+                {
+                    "type": "Ext.data.field.Date",
+                    "reference": {
+                        "name": "fields",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "dateFormat": "d/m/Y",
+                        "name": "dataNasteriiCursant"
+                    },
+                    "name": "MyDate",
+                    "designerId": "e3a8d905-ce37-4d55-b412-9fd73d895bbb"
+                },
+                {
+                    "type": "Ext.data.field.Field",
+                    "reference": {
+                        "name": "fields",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "name": "categorieCurs"
+                    },
+                    "name": "MyField5",
+                    "designerId": "d74fc4db-1fd3-4ad7-8391-8c1b926678d5"
+                }
+            ]
+        }
+    ]
+}

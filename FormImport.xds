@@ -1,0 +1,54 @@
+{
+    "name": "FormImport",
+    "settings": {
+        "cmd": {
+            "license": "commercial",
+            "cmdVersion": "5.1.3.61",
+            "frameworkVersion": "5.0.1.1255"
+        },
+        "canvasControls": {
+            "viewportSize": {
+                "name": "Auto Expand",
+                "builtIn": true,
+                "height": null,
+                "width": null
+            }
+        },
+        "urlPrefix": "http://localhost:1841",
+        "exportPath": "",
+        "spacesToIndent": 4,
+        "sdkPath": "",
+        "lineEnding": "CRLF",
+        "genTimestamps": false,
+        "cacheBust": false,
+        "buildShouldOverwriteIndex": true,
+        "generateArchitectVersion": true,
+        "projectHasEnabledWebServer": true,
+        "lastBuildSelection": {
+            "value": "webBuild",
+            "display": "Build web app"
+        }
+    },
+    "xdsVersion": "3.2.0",
+    "xdsBuild": 339,
+    "schemaVersion": 1,
+    "upgradeVersion": 310000000001,
+    "framework": "ext50",
+    "viewOrderMap": {
+        "view": [
+            "0ba41f05-69d3-4f65-a25f-892e02e1b78d",
+            "29d62ecc-ee99-4d29-a5e8-94261facd88a",
+            "874378ee-64b4-4baf-a2d4-a81551e56fa3"
+        ],
+        "store": [],
+        "controller": [],
+        "model": [],
+        "resource": [
+            "9a78f845-6352-4ac7-b83a-4179296ac504",
+            "fb12781a-8789-411e-a735-23324ae76d60"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}
