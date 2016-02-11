@@ -130,6 +130,73 @@
                     ]
                 }
             ]
+        },
+        {
+            "type": "Ext.data.Store",
+            "reference": {
+                "name": "stores",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "autoLoad": true,
+                "name": "Categorii"
+            },
+            "name": "MyStore1",
+            "designerId": "e339b9e2-c759-459d-a73a-c085f5f4dc77",
+            "cn": [
+                {
+                    "type": "Ext.data.field.Field",
+                    "reference": {
+                        "name": "fields",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "name": "id"
+                    },
+                    "name": "MyField4",
+                    "designerId": "a4ed78a4-19f7-456b-9780-54e5aa8e3138"
+                },
+                {
+                    "type": "Ext.data.field.Field",
+                    "reference": {
+                        "name": "fields",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "name": "categorie"
+                    },
+                    "name": "MyField6",
+                    "designerId": "c719c99f-0770-4173-b152-3a61223911e4"
+                },
+                {
+                    "type": "Ext.data.proxy.Rest",
+                    "reference": {
+                        "name": "proxy",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "url": "resources/categories.json"
+                    },
+                    "name": "MyRestProxy1",
+                    "designerId": "6908716d-cdf7-4777-aba0-202ac7fe2fff",
+                    "cn": [
+                        {
+                            "type": "Ext.data.reader.Json",
+                            "reference": {
+                                "name": "reader",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "MyJsonReader1",
+                            "designerId": "6b612f2d-e0f3-4b0a-9230-6de28a0d2ccc"
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }

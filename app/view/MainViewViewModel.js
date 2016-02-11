@@ -56,6 +56,24 @@ Ext.define('MyApp.view.MainViewViewModel', {
                     type: 'json'
                 }
             }
+        },
+        Categorii: {
+            autoLoad: true,
+            fields: [
+                {
+                    name: 'id'
+                },
+                {
+                    name: 'categorie'
+                }
+            ],
+            proxy: {
+                type: 'rest',
+                url: 'resources/categories.json',
+                reader: {
+                    type: 'json'
+                }
+            }
         }
     }
 

@@ -22,8 +22,7 @@ Ext.define('MyApp.view.MainView', {
         'MyApp.view.MainViewViewController',
         'Ext.form.Panel',
         'Ext.form.field.Date',
-        'Ext.form.CheckboxGroup',
-        'Ext.form.field.Checkbox',
+        'Ext.form.field.ComboBox',
         'Ext.toolbar.Toolbar',
         'Ext.button.Button',
         'Ext.grid.Panel',
@@ -119,60 +118,16 @@ Ext.define('MyApp.view.MainView', {
                             showToday: false
                         },
                         {
-                            xtype: 'checkboxgroup',
-                            width: 150,
-                            defaults: {
-                                margin: '0 10 0 0'
-                            },
-                            fieldLabel: 'Categoria',
-                            allowBlank: false,
-                            blankText: 'You must select at least a category',
-                            items: [
-                                {
-                                    xtype: 'checkboxfield',
-                                    margin: '0 10 0 0',
-                                    name: 'A',
-                                    value: 'A',
-                                    boxLabel: 'A',
-                                    inputValue: 'A'
-                                },
-                                {
-                                    xtype: 'checkboxfield',
-                                    name: 'B',
-                                    value: {
-                                        value: 'B'
-                                    },
-                                    boxLabel: 'B',
-                                    inputValue: 'B'
-                                },
-                                {
-                                    xtype: 'checkboxfield',
-                                    name: 'C',
-                                    value: {
-                                        value: 'C'
-                                    },
-                                    boxLabel: 'C',
-                                    inputValue: 'C'
-                                },
-                                {
-                                    xtype: 'checkboxfield',
-                                    name: 'CE',
-                                    value: {
-                                        value: 'CE'
-                                    },
-                                    boxLabel: 'CE',
-                                    inputValue: 'CE'
-                                },
-                                {
-                                    xtype: 'checkboxfield',
-                                    name: 'D',
-                                    value: {
-                                        value: 'D'
-                                    },
-                                    boxLabel: 'D',
-                                    inputValue: 'D'
-                                }
-                            ]
+                            xtype: 'combobox',
+                            anchor: '100%',
+                            fieldLabel: 'Categorii:',
+                            name: 'categorieCurs',
+                            displayField: 'categorie',
+                            multiSelect: true,
+                            valueField: 'id',
+                            bind: {
+                                store: '{Categorii}'
+                            }
                         }
                     ],
                     dockedItems: [
@@ -184,12 +139,15 @@ Ext.define('MyApp.view.MainView', {
                                     xtype: 'button',
                                     text: 'Submit',
                                     listeners: {
-                                        click: 'onButtonClick'
+                                        click: 'onSubmitButtonClick'
                                     }
                                 },
                                 {
                                     xtype: 'button',
-                                    text: 'MyButton'
+                                    text: 'Reset',
+                                    listeners: {
+                                        click: 'onResetButtonClick'
+                                    }
                                 }
                             ]
                         }
@@ -253,19 +211,16 @@ Ext.define('MyApp.view.MainView', {
                         {
                             xtype: 'gridcolumn',
                             renderer: function(value, metaData, record, rowIndex, colIndex, store, view) {
-                                var cat = [
-                                'A', 'B', 'C', 'CE', 'D'
-                                ];
-
-                                var courseCategories = [];
-                                for(var i = 0; i<cat.length; i++)
+                                var localStore = view.up('viewport').getViewModel().getStore('Categorii');
+                                var localRecord;
+                                var categorii = [];
+                                value.forEach(function(id)
                                 {
-                                    if(record.get(cat[i]) == 'on')
-                                    {
-                                        courseCategories.push(cat[i]);
-                                    }
-                                }
-                                return courseCategories.join(', ');
+                                    localRecord = localStore.getById(id);
+                                    categorii.push(localRecord.get('categorie'));
+                                });
+                                return categorii.join(', ');
+
                             },
                             dataIndex: 'categorieCurs',
                             text: 'Categoria',

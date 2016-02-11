@@ -17,7 +17,7 @@ Ext.define('MyApp.view.MainViewViewController', {
     extend: 'Ext.app.ViewController',
     alias: 'controller.mainview',
 
-    onButtonClick: function(button, e, eOpts) {
+    onSubmitButtonClick: function(button, e, eOpts) {
         var form = this.getView().down('form');
         var store = this.getViewModel().getStore('Cursanti');
 
@@ -25,6 +25,11 @@ Ext.define('MyApp.view.MainViewViewController', {
             var data = form.getValues();
             store.loadData([data], true);
         }
+    },
+
+    onResetButtonClick: function(button, e, eOpts) {
+        var formPanel = this.getView().down('form');
+        formPanel.reset();
     },
 
     onRowModelSelect: function(rowmodel, record, index, eOpts) {

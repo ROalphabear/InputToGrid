@@ -6,7 +6,7 @@
         adresaCursant: 'Wallnut street no.3',
         cnpCursant: 1234567896547,
         dataNasteriiCursant: '11/02/2001',
-        categorieCurs:['A', 'B']
+        categorieCurs:[1, 2]
     },
     {
         id: 1,
@@ -15,7 +15,7 @@
         adresaCursant: 'Coconut street no.3',
         cnpCursant: 1987654321321,
         dataNasteriiCursant: '01/11/2001',
-        categorieCurs:['A']
+        categorieCurs:[1]
     },
     {
         id: 2,
@@ -24,7 +24,7 @@
         adresaCursant: 'Chestnut street no. 3',
         cnpCursant: 1452369874563,
         dataNasteriiCursant: '20/01/2011',
-        categorieCurs:['CE', 'D']
+        categorieCurs:[4, 1]
     },
     {
         id: 3,
@@ -33,15 +33,15 @@
         adresaCursant: 'Hazelnut street no. 3',
         cnpCursant: 1478523698741,
         dataNasteriiCursant: '22/12/2006',
-        categorieCurs:['A', 'B', 'C']
+        categorieCurs:[1, 2, 3]
     },
     {
         id: 4,
         numeCursant: 'Medium',
         prenumeCursant: 'Joey',
-        adresaCursant: 'Macadamia nut street no. 3',
+        adresaCursant: 'Cashew street no. 3',
         cnpCursant: 7854123698745,
         dataNasteriiCursant: '21/02/2002',
-        categorieCurs:['A', 'B']
+        categorieCurs:[1, 2]
     }
 ]
