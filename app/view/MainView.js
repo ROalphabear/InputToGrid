@@ -29,7 +29,9 @@ Ext.define('MyApp.view.MainView', {
         'Ext.grid.Panel',
         'Ext.grid.column.Number',
         'Ext.grid.column.Date',
-        'Ext.grid.View'
+        'Ext.grid.View',
+        'Ext.selection.RowModel',
+        'Ext.grid.plugin.CellEditing'
     ],
 
     controller: 'mainview',
@@ -131,7 +133,8 @@ Ext.define('MyApp.view.MainView', {
                                     margin: '0 10 0 0',
                                     name: 'A',
                                     value: 'A',
-                                    boxLabel: 'A'
+                                    boxLabel: 'A',
+                                    inputValue: 'A'
                                 },
                                 {
                                     xtype: 'checkboxfield',
@@ -139,7 +142,8 @@ Ext.define('MyApp.view.MainView', {
                                     value: {
                                         value: 'B'
                                     },
-                                    boxLabel: 'B'
+                                    boxLabel: 'B',
+                                    inputValue: 'B'
                                 },
                                 {
                                     xtype: 'checkboxfield',
@@ -147,7 +151,8 @@ Ext.define('MyApp.view.MainView', {
                                     value: {
                                         value: 'C'
                                     },
-                                    boxLabel: 'C'
+                                    boxLabel: 'C',
+                                    inputValue: 'C'
                                 },
                                 {
                                     xtype: 'checkboxfield',
@@ -155,7 +160,8 @@ Ext.define('MyApp.view.MainView', {
                                     value: {
                                         value: 'CE'
                                     },
-                                    boxLabel: 'CE'
+                                    boxLabel: 'CE',
+                                    inputValue: 'CE'
                                 },
                                 {
                                     xtype: 'checkboxfield',
@@ -163,7 +169,8 @@ Ext.define('MyApp.view.MainView', {
                                     value: {
                                         value: 'D'
                                     },
-                                    boxLabel: 'D'
+                                    boxLabel: 'D',
+                                    inputValue: 'D'
                                 }
                             ]
                         }
@@ -179,6 +186,10 @@ Ext.define('MyApp.view.MainView', {
                                     listeners: {
                                         click: 'onButtonClick'
                                     }
+                                },
+                                {
+                                    xtype: 'button',
+                                    text: 'MyButton'
                                 }
                             ]
                         }
@@ -208,7 +219,10 @@ Ext.define('MyApp.view.MainView', {
                             xtype: 'gridcolumn',
                             dataIndex: 'numeCursant',
                             text: 'Nume',
-                            flex: 1
+                            flex: 1,
+                            editor: {
+                                xtype: 'textfield'
+                            }
                         },
                         {
                             xtype: 'gridcolumn',
@@ -256,6 +270,17 @@ Ext.define('MyApp.view.MainView', {
                             dataIndex: 'categorieCurs',
                             text: 'Categoria',
                             flex: 1
+                        }
+                    ],
+                    selModel: {
+                        selType: 'rowmodel',
+                        listeners: {
+                            select: 'onRowModelSelect'
+                        }
+                    },
+                    plugins: [
+                        {
+                            ptype: 'cellediting'
                         }
                     ]
                 }

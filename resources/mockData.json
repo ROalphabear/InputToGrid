@@ -1,0 +1,47 @@
+[
+    {
+        id: 0,
+        numeCursant: 'Regular',
+        prenumeCursant: 'Joe',
+        adresaCursant: 'Wallnut street no.3',
+        cnpCursant: 1234567896547,
+        dataNasteriiCursant: '11/02/2001',
+        categorieCurs:['A', 'B']
+    },
+    {
+        id: 1,
+        numeCursant: 'Average',
+        prenumeCursant: 'Joe',
+        adresaCursant: 'Coconut street no.3',
+        cnpCursant: 1987654321321,
+        dataNasteriiCursant: '01/11/2001',
+        categorieCurs:['A']
+    },
+    {
+        id: 2,
+        numeCursant: 'Mediocre',
+        prenumeCursant: 'Jonathan',
+        adresaCursant: 'Chestnut street no. 3',
+        cnpCursant: 1452369874563,
+        dataNasteriiCursant: '20/01/2011',
+        categorieCurs:['CE', 'D']
+    },
+    {
+        id: 3,
+        numeCursant: 'Ordinary',
+        prenumeCursant: 'Djoe',
+        adresaCursant: 'Hazelnut street no. 3',
+        cnpCursant: 1478523698741,
+        dataNasteriiCursant: '22/12/2006',
+        categorieCurs:['A', 'B', 'C']
+    },
+    {
+        id: 4,
+        numeCursant: 'Medium',
+        prenumeCursant: 'Joey',
+        adresaCursant: 'Cashew street no. 3',
+        cnpCursant: 7854123698745,
+        dataNasteriiCursant: '21/02/2002',
+        categorieCurs:['A', 'B']
+    }
+]

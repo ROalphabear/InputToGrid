@@ -19,6 +19,7 @@
             },
             "codeClass": null,
             "userConfig": {
+                "autoLoad": true,
                 "name": "Cursanti"
             },
             "name": "MyStore",
@@ -102,6 +103,31 @@
                     },
                     "name": "MyField5",
                     "designerId": "d74fc4db-1fd3-4ad7-8391-8c1b926678d5"
+                },
+                {
+                    "type": "Ext.data.proxy.Rest",
+                    "reference": {
+                        "name": "proxy",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "url": "resources/mockData.json"
+                    },
+                    "name": "MyRestProxy",
+                    "designerId": "da1402ba-9d26-453d-95e5-4f3b4e41aa05",
+                    "cn": [
+                        {
+                            "type": "Ext.data.reader.Json",
+                            "reference": {
+                                "name": "reader",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "name": "MyJsonReader",
+                            "designerId": "5aa41567-134b-4fe6-9b56-78130d797d4f"
+                        }
+                    ]
                 }
             ]
         }

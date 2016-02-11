@@ -19,11 +19,14 @@ Ext.define('MyApp.view.MainViewViewModel', {
 
     requires: [
         'Ext.data.Store',
-        'Ext.data.field.Date'
+        'Ext.data.field.Date',
+        'Ext.data.proxy.Rest',
+        'Ext.data.reader.Json'
     ],
 
     stores: {
         Cursanti: {
+            autoLoad: true,
             fields: [
                 {
                     name: 'numeCursant'
@@ -45,7 +48,14 @@ Ext.define('MyApp.view.MainViewViewModel', {
                 {
                     name: 'categorieCurs'
                 }
-            ]
+            ],
+            proxy: {
+                type: 'rest',
+                url: 'resources/mockData.json',
+                reader: {
+                    type: 'json'
+                }
+            }
         }
     }
 

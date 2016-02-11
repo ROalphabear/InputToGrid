@@ -25,6 +25,11 @@ Ext.define('MyApp.view.MainViewViewController', {
             var data = form.getValues();
             store.loadData([data], true);
         }
+    },
+
+    onRowModelSelect: function(rowmodel, record, index, eOpts) {
+        var form = this.getView().down('form');
+        form.loadRecord(record);
     }
 
 });
